@@ -12,11 +12,52 @@
 }
 
 .name-title {
-	/* z-index: +5; */
+	/* z-index: +10; */
+	
+	border: 0;
+	text-align: center;
 	position: absolute;
-	right: 100px;
-	bottom: 89px;
 	font-size: 30px;
+	width: 100%;
+	left: 0;
+
+	/* right: 100px;
+	bottom: 89px; */
+	/* font-size: 2em; */
+	/* height: 100%; */
+	/* display: inline-block; */
+	/* margin: 0; */
+
+
+	/* position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center; */
+
+	/* position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1; */
+}
+
+@media screen and (min-width: 320px) {
+	.name-title {
+	  font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+	}
+}
+
+@media screen and (min-width: 740px) {
+	.name-title {
+	  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.name-title {
+	font-size: 22px;
+	}
 }
 
 .pantry-raider{
